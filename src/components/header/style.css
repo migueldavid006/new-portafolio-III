@@ -1,0 +1,71 @@
+.menu{
+    background-color: #232F3E;
+    padding: 5px o;
+    margin-bottom: 20px;
+}
+
+.menu .contenedor-botones-menu{
+    /* display: flex; */
+    display: none;
+    justify-content: space-between;
+
+
+}
+
+.menu .contenedor-botones-menu button{
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+
+}
+
+.menu .contenedor-botones-menu button:hover {
+    border: 1px solid rgba(255, 255, 255, .4);
+}
+.menu .contenedor-botones-menu .btn-cerrar {
+    display: none;
+}
+ 
+.menu .contenedor-botones-menu .btn-cerrar.activo {
+display: inline-block;
+
+}
+
+.contenedor .contenedor-enlaces-nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.menu .btn-departamentos{
+    color: #fff;
+    padding: 7px;
+    border-radius: 3px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid transparent;
+    font-size: 12px;
+    cursor: default;
+
+}
+.menu .btn-departamentos .icono-down{
+    position: relative;
+    margin-left: 20px;
+    
+    bottom: 3px;
+    
+}
+
+.menu .btn-departamentos:hover{
+    
+    border: 1px solid  rgba(255, 255, 255, 0.4);
+    
+}
+
+.menu .btn-departamentos span{
+    
+}
