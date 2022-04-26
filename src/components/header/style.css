@@ -40,6 +40,18 @@ display: inline-block;
     justify-content: space-between;
     align-content: center;
 }
+/* display flex no se aplica con la clasee */
+
+#qwe{
+    display: flex;
+    justify-content: space-between;
+}
+/* no reconoce el alling conten: CENTER */
+
+#qwe a{
+    position: relative;
+    top:20px;
+}
 
 .menu .btn-departamentos{
     color: #fff;
@@ -50,6 +62,11 @@ display: inline-block;
     border: 1px solid transparent;
     font-size: 12px;
     cursor: default;
+    /* display: inline-block; */
+    /* display: inline-block;  OPCIONAL*/ 
+    display: inline-block;
+
+   
 
 }
 .menu .btn-departamentos .icono-down{
@@ -60,12 +77,145 @@ display: inline-block;
     
 }
 
+
 .menu .btn-departamentos:hover{
     
     border: 1px solid  rgba(255, 255, 255, 0.4);
-    
 }
 
 .menu .btn-departamentos span{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu .contenedor-enlaces-nav .enlaces a{
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 7px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.menu .contenedor-enlaces-nav .enlaces a:hover{
+    border: 1px solid  rgba(255, 255, 255, 0.4);
+
+}
+
+
+/* GRID GRID GRID GRID GRISD */
+.contenedor-grid{
+    position: relative;
+}
+.grid{
+
+    width: 100%;
+    display: none;
+    /* background: #ccc ; */
+    position: absolute;
     
+    z-index: 1000;
+
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+
+    grid-template-areas: "language projects  projects projects ";
+
+}
+
+.grid.activo{
+    display: grid;
+}
+
+.grid::before{
+    content: "";
+    display: block;
+    background: transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+    position: absolute;
+    top: -5px;
+    left: 65px;
+}
+
+.grid > div {
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .10);
+
+}
+
+.grid .btn-regresar{
+    background: #232f3E;
+    color: #fff;
+    border: none;
+    padding: 1px;
+    border-radius: 3px;
+    margin: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+}
+
+.grid .btn-regresar{
+    margin-right: 10px;
+}
+
+.grid .categorias{
+
+    grid-area: language;
+    padding-top: 10px;
+    min-height: 300px;
+
+
+}
+
+.grid .categorias .subtitulo {
+    display: none;
+}
+
+.grid .categorias a {
+    color: #000;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.grid .categorias a span{
+    display: none;
+}
+
+.grid .categorias a:hover{
+    color: #E47911;
+    font: bold;
+}
+.grid .categorias a:hover span{
+    display: inline-block;
+}
+
+
+
+
+
+
+.img0{
+    width: 500px;
+}
+
+.img1 ,.img2, .img3, .img4, .img5{
+    width: 180px;
+}
+/* SUBCATEGORIAS  SUBCATEGORIAS  */
+
+.grid .contenedor-subcategorias{
+    grid-area: projects;
+}
+
+.grid .subcategoria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    height: 100%;
 }
