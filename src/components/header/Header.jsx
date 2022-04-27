@@ -7,8 +7,8 @@ import img1 from './../../assets/img/carrito.png'
 import img2 from './../../assets/img/cerebro.png'
 import img3 from './../../assets/img/clima.png'
 import img4 from './../../assets/img/cotizador.png'
-import img5 from './../../assets/img/cripto.png'
-import img6 from './../../assets/img/express.png'
+// import img5 from './../../assets/img/cripto.png'
+// import img6 from './../../assets/img/express.png'
 
 const Header = () => {
   return (
@@ -60,7 +60,7 @@ const Header = () => {
               </div>
 
               <div className="contenedor-subcategorias">
-                  <div className="subcategoria" data-categoria="html-css">
+                  <div className="subcategoria activo" data-categoria="html-css">
                     <div className="enlaces-subcategoria">
                       <button className="btn-regresar"><span> = REGRESAR</span></button>
                         <h3 className='subtitulo'>HTML CSS</h3>
